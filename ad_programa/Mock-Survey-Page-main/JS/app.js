@@ -42,3 +42,7 @@ function enviarFormulario() {
   // Redirecionando para a página de resultados
   window.location.href = 'results.html';
 }
+
+exports.default = series(scssTask, jsTask, browserSyncServe, watchTaks);
+
+exports.build = series(scssTask, jsTask);
