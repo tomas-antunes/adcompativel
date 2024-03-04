@@ -33,7 +33,18 @@ function enviarFormulario() {
     likert6: parseFloat(document.querySelector('input[name="likert-6"]:checked').value),
     likert7: parseFloat(document.querySelector('input[name="likert-7"]:checked').value),
     likert8: parseFloat(document.querySelector('input[name="likert-8"]:checked').value),
-    likert9: parseFloat(document.querySelector('input[name="likert-9"]:checked').value)
+    likert9: parseFloat(document.querySelector('input[name="likert-9"]:checked').value),
+    likert10: parseFloat(document.querySelector('input[name="likert-10"]:checked').value),
+    likert11: parseFloat(document.querySelector('input[name="likert-11"]:checked').value),
+    likert12: parseFloat(document.querySelector('input[name="likert-12"]:checked').value),
+    likert13: parseFloat(document.querySelector('input[name="likert-13"]:checked').value),
+    likert14: parseFloat(document.querySelector('input[name="likert-14"]:checked').value),
+    likert15: parseFloat(document.querySelector('input[name="likert-15"]:checked').value),
+    likert16: parseFloat(document.querySelector('input[name="likert-16"]:checked').value),
+    likert17: parseFloat(document.querySelector('input[name="likert-17"]:checked').value),
+    likert18: parseFloat(document.querySelector('input[name="likert-18"]:checked').value),
+    likert19: parseFloat(document.querySelector('input[name="likert-19"]:checked').value),
+    likert20: parseFloat(document.querySelector('input[name="likert-20"]:checked').value)
   };
 
   // Armazenando respostas no localStorage
