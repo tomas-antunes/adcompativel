@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;1,500&family=Nunito&display=swap" rel="stylesheet"> 
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Formulário de Compatibilidade Política</title>
+</head>
+<body>
+  <header></header>
+  
+  <main>
+    
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+    
+    <div id="wrapper">
+      
+      <form action="" id="survey-form">
+        <h1 id="title">Descobre a tua Compatibilidade com o Programa da AD</h1>
+        <p id="description">Dedica alguns minutos a preencher o questionário sobre políticas públicas e descubre a tua compatibilidade com o Programa da AD. Este formulário consiste numa série de questões relativas a diferentes áreas como saúde, educação, emprego, entre outras, onde te será pedido para expressares o teu acordo ou desacordo com diversas afirmações, utilizando uma escala de cinco opções que variam entre "Concordo" e "Discordo". No final, baseado nas respostas, calcular-se-á a tua compatibilidade com o programa da AD, apresentando-te um resultado sob a forma de uma percentagem. </p> 
+        
+        <!-- Perguntas sobre Política com escala Likert -->
+        <div class="form-control likert-scale">
+          <!-- Pergunta 1 -->
+          <div class="likert">
+            <label class="question">Acredito que deveria haver menos flexibilidade nos modos de trabalho para garantir a estabilidade do emprego?</label>
+            <ul>
+              <li><label class="selectable"><input type="radio" name="likert-1" value="0"> Concordo</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-1" value="2"> Tendo a Concordar</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-1" value="4"> Indiferentes</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-1" value="6"> Tendo a Discordar</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-1" value="8"> Discordo</label></li>
+            </ul>
+          </div>
+          
+          <!-- Adicione mais perguntas conforme necessário -->
+          <div class="likert">
+            <label class="question">Deve-se incentivar mais o investimento privado e cooperativo em habitação, para além da habitação pública?</label>
+            <ul>
+              <li><label class="selectable"><input type="radio" name="likert-2" value="8"> Concordo</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-2" value="6"> Tendo a Concordar</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-2" value="4"> Indiferente</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-2" value="2"> Tendo a Discordar</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-2" value="0"> Discordo</label></li>
+            </ul>
+          </div>
+          
+          <div class="likert">
+            <label class="question">Apoio medidas restritivas no mercado de habitação, como o congelamento de rendas?</label>
+            <ul>
+              <li><label class="selectable"><input type="radio" name="likert-3" value="0"> Concordo</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-3" value="2"> Tendo a Concordar</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-3" value="4"> Indiferente</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-3" value="6"> Tendo a Discordar</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-3" value="8"> Discordo</label></li>
+            </ul>
+          </div>
+
+          <div class="likert">
+            <label class="question">Apoio a reforma do sistema educativo para melhor alinhar as qualificações com as necessidades do mercado de trabalho?</label>
+            <ul>
+              <li><label class="selectable"><input type="radio" name="likert-4" value="8"> Concordo</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-4" value="6"> Tendo a Concordar</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-4" value="4"> Indiferente</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-4" value="2"> Tendo a Discordar</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-4" value="0"> Discordo</label></li>
+            </ul>
+          </div>
+
+          <div class="likert">
+            <label class="question">Sou a favor de políticas de imigração mais restritivas para proteger o mercado de trabalho nacional?</label>
+            <ul>
+              <li><label class="selectable"><input type="radio" name="likert-5" value="0"> Concordo</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-5" value="2"> Tendo a Concordar</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-5" value="4"> Indiferente</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-5" value="6"> Tendo a Discordar</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-5" value="8"> Discordo</label></li>
+            </ul>
+          </div>
+
+          <div class="likert">
+            <label class="question">Concordo com a promoção de uma política de imigração regulada que facilite a integração humanista dos imigrantes?</label>
+            <ul>
+              <li><label class="selectable"><input type="radio" name="likert-6" value="8"> Concordo</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-6" value="6"> Tendo a Concordar</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-6" value="4"> Indiferente</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-6" value="2"> Tendo a Discordar</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-6" value="0"> Discordo</label></li>
+            </ul>
+          </div>
+
+          <div class="likert">
+            <label class="question">Apoio a convergência dos direitos à proteção social entre trabalhadores independentes e por conta de outrem?</label>
+            <ul>
+              <li><label class="selectable"><input type="radio" name="likert-7" value="8"> Concordo</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-7" value="6"> Tendo a Concordar</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-7" value="4"> Indiferente</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-7" value="2"> Tendo a Discordar</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-7" value="0"> Discordo</label></li>
+            </ul>
+          </div>
+          <div class="likert">
+            <label class="question">Concordo com a simplificação do código do trabalho e a modernização das regras fiscais para promover o crescimento económico?</label>
+            <ul>
+              <li><label class="selectable"><input type="radio" name="likert-8" value="8"> Concordo</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-8" value="6"> Tendo a Concordar</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-8" value="4"> Indiferente</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-8" value="2"> Tendo a Discordar</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-8" value="0"> Discordo</label></li>
+            </ul>
+          </div>w
+
+          <div class="likert">
+            <label class="question">Deveríamos aumentar os impostos sobre as empresas para financiar serviços públicos em vez de simplificar o código do trabalho?</label>
+            <ul>
+              <li><label class="selectable"><input type="radio" name="likert-9" value="0"> Concordo</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-9" value="2"> Tendo a Concordar</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-9" value="4"> Indiferente</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-9" value="6"> Tendo a Discordar</label></li>
+              <li><label class="selectable"><input type="radio" name="likert-9" value="8"> Discordo</label></li>
+            </ul>
+          </div>
+
+
+        </div>
+        
+        
+        <button type="button" id="submit" class="input-area" onclick="enviarFormulario()">Submeter</button>
+
+      </form>
+    </div>
+    <footer style="background-color: #F6EEEE; padding: 10px; text-align: center;">
+      <a href="https://www.instagram.com/jsddistritallisboa/">
+        <img src="https://i.ibb.co/svSjThD/logojsddlx.png" alt="logojsddlx" style="max-width: 100px;" border="0" />
+      </a>
+      <a href="https://www.instagram.com/jsddistritallisboa/" target="_blank">
+        <p><small>Segue-nos no Instagram</small></p>
+      </a>
+      <p><small>© Juventude Social Democrata Distrital de Lisboa </small>
+      </p>
+      <p><small> Todos os direitos reservados</small></p>
+      <p><small> 2024</small></p>
+      <a href="politica.html">
+        <p><small>Política de Privacidade e Utilização de Cookies</small></p>
+      </a>
+
+    
+    </footer>
+  </main>
+  
+  
+</body>
+
+<script src="./JS/app.js"></script>
+</html>

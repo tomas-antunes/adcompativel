@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;1,500&family=Nunito&display=swap" rel="stylesheet"> 
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Resultados da Compatibilidade Política</title>
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .wrapper {
+      text-align: center;
+    }
+    .progress-container {
+      width: 80%;
+      background-color: #eee;
+      margin: auto;
+    }
+    .progress-bar {
+      width: 1%;
+      height: 30px;
+      background-color: #4CAF50;
+      text-align: center;
+      line-height: 30px;
+      color: white;
+      transition: width 2s;
+    }
+    button {
+      background-color: rgba(238,97,35,1);; /* Verde */
+      color: white;
+      padding: 14px 20px;
+      margin: 20px 0;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+    button:hover {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Compatibilidade</h1>
+      <h1>com o Programa da AD</h1>
+    </header>
+    
+    <main>
+      <div class="progress-container">
+        <div id="progress-bar" class="progress-bar">0%</div>
+      </div>
+      <div id="resultados" class="resultados"></div>
+      <a href="https://ad2024.pt/pdf/ad-programa-eleitoral.pdf" class="link-pdf" target="_blank">Consulta o Programa Eleitoral Completo (PDF)</a>
+      <button type="submit" id="submit" class="input-area" onclick="window.history.back()">Refazer as Perguntas</button>
+      <footer style="background-color: #FFFFFF; padding: 10px; text-align: center;">
+        <a href="https://www.instagram.com/jsddistritallisboa/">
+          <img src="https://i.ibb.co/svSjThD/logojsddlx.png" alt="logojsddlx" style="max-width: 100px;" border="0" />
+        </a>
+        <a href="https://www.instagram.com/jsddistritallisboa/" target="_blank">
+          <p><small>Segue-nos no Instagram</small></p>
+        </a>
+        <p><small>© Juventude Social Democrata Distrital de Lisboa </small>
+        </p>
+        <p><small> Todos os direitos reservados</small></p>
+        <p><small> 2024</small></p>
+        <a href="politica.html">
+          <p><small>Política de Privacidade e Utilização de Cookies</small></p>
+        </a>
+  
+      
+      </footer>
+      
+    </main>
+  </div>
+
+  <script>
+    window.onload = function() {
+      const respostas = JSON.parse(localStorage.getItem('respostasFormulario'));
+      let totalPontos = 0;
+      let maxPontos = Object.keys(respostas).length * 8;
+
+      for (const valor of Object.values(respostas)) {
+        totalPontos += parseInt(valor);
+      }
+
+      const compatibilidade = (totalPontos * 100) / maxPontos;
+      animateProgressBar(compatibilidade);
+      
+      // Limpa as respostas do localStorage se não forem mais necessárias
+      localStorage.removeItem('respostasFormulario');
+    };
+
+    function animateProgressBar(compatibilidade) {
+      const bar = document.getElementById('progress-bar');
+      let width = 1;
+      const interval = setInterval(frame, 20);
+      function frame() {
+        if (width >= compatibilidade) {
+          clearInterval(interval);
+        } else {
+          width++;
+          bar.style.width = width + '%';
+          bar.innerHTML = width + '%';
+        }
+      }
+    }
+  </script>
+  
+</body>
+
+</html>
