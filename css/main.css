@@ -156,8 +156,9 @@ input:focus::placeholder, textarea:focus::placeholder {
   display: block;
   outline: none;
   /* removes default focus */
-  background-color: var(--light);
+  background: var(--primary-l);
   border: 2px solid var(--neutral-l);
+  color: var(--light);
   border-radius: 0.25em;
   font-size: inherit;
   padding: 0.5em;
@@ -172,6 +173,12 @@ input:focus::placeholder, textarea:focus::placeholder {
   cursor: pointer;
   padding-bottom: 0.5em;
 }
+.selectable, #button {
+  cursor: pointer;
+  padding-bottom: 0.5em;
+}
+
+
 
 /* arrow on select dropdown */
 #dropdown {
@@ -223,6 +230,16 @@ textarea {
   background: var(--primary);
 }
 
+#button {
+  color: var(--light);
+  background: var(--primary-l);
+  padding: 1em;
+  border: none;
+}
+
+#button:hover {
+  background: var(--primary);
+}
 /* ------------------
  checkbox and radio
 -------------------- */
@@ -275,7 +292,7 @@ input[type="checkbox"]::after {
   position: absolute;
   width: 5px;
   height: 9px;
-  border: 2px solid var(--active-inner, var(--light));
+  border: 2px solid var(--active-inner, var (--light));
   border-top: 0;
   border-left: 0;
   left: 5px;
@@ -347,4 +364,17 @@ progress bar
   background: var(--neutral-l);
   background: var(--gradient);
   width: 0%;
+}
+
+@media (max-width: 600px) {
+  #wrapper {
+    margin: 2em 0;
+    padding: 1em;
+  }
+
+  .input-area {
+    font-size: 0.875rem;
+  }
+
+
 }
